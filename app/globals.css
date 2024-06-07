@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background-app-rgb: 244, 245, 247;
+    --background-app: #fff;
+    --color-primary: #f3e8ff;
+    --color-secondary: #7273d3;
+    --color-success: 0, 192, 115;
+    --color-warning: 255, 153, 0;
+    --color-error: 255, 71, 87;
+    --color-red-500: 239, 68, 68;
+    --color-red-300: 252, 165, 165;
+    --color-white: #fff;
+  }
+}
+
+@layer components {
+  .textField__input {
+    @apply w-full py-3 px-4 rounded-xl bg-gray-100 text-secondary-900 border border-gray-100 outline-none duration-200 transition-all ease-in-out hover:border-primary-300 focus:outline-none focus:border-primary-300 focus:shadow-input-focus focus:bg-white;
+  }
+  .btn {
+    @apply px-2 py-1 font-bold rounded-2xl transition-all duration-300;
+  }
+  .btn--primary {
+    @apply px-4 py-3 bg-primary-900 text-white hover:bg-primary-800 shadow-lg shadow-primary-300;
+  }
+  .table__th {
+    @apply border-b-2 border-b-gray-500 font-medium p-3 pr-8 pb-3 text-right;
+  }
+  .table__td {
+    @apply border-b  border-b-gray-300 p-3 pr-8 pb-3 text-right;
+  }
+  .badge {
+    @apply whitespace-nowrap px-3 py-1 rounded-xl;
+  }
+  .badge--primary {
+    @apply bg-primary-900 text-white;
+  }
+  .badge--secondary {
+    @apply bg-secondary-600 text-white;
+  }
+  .badge--success {
+    @apply bg-green-600 text-white;
+  }
+  .badge--error {
+    @apply bg-rose-600 text-white;
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--lalezar-font);
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 1;
+}
