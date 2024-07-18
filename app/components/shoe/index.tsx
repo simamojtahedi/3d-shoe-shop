@@ -25,7 +25,7 @@ const state = proxy({
 
 export default function ShoeWrapper() {
   return (
-    <div className=" w-full xl:w-[700px] h-full xl:h-[500px]">
+    <div className="w-full xl:w-[700px] h-full xl:h-[500px]">
       <Canvas shadows camera={{ position: [0, 0, 4], fov: 45 }}>
         <ambientLight intensity={0.6} />
         <spotLight
