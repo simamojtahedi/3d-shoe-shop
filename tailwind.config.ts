@@ -2,7 +2,7 @@
 const { fontFamily } = require("tailwindcss/defaultTheme");
 
 function withOpacity(variableName: string) {
-  return ({ opacityValue }) => {
+  return ({ opacityValue }: any) => {
     if (opacityValue !== undefined) {
       return `rgba(var(${variableName}), ${opacityValue})`;
     }
