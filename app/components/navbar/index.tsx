@@ -35,7 +35,7 @@ const Navbar = () => {
           href="/login"
           className="btn btn-ghost w-12 h-12 ml-4 hover:bg-[var(--color-primary)]"
         >
-          <Image src={UserIcon} />
+          <Image src={UserIcon} alt="User" />
         </Link>
         <div className="dropdown dropdown-end">
           <div

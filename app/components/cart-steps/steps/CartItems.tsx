@@ -13,11 +13,12 @@ const CartItems = ({
   return (
     <div className="flex flex-col xl:flex-row items-start justify-between">
       <div className="flex-1">
-        {cart_items.map((item) => (
+        {cart_items.map((item: any) => (
           <div className="p-3 border-2 rounded-2xl mt-4 flex flex-col xl:flex-row items-start justify-between">
             <div className="flex-1">
               <div className="flex flex-col xl:flex-row items-start">
                 <Image
+                  alt="Image"
                   src={getProductData(item.id)?.image}
                   className="rounded-xl xl:ml-4 xl:w-[120px] w-full"
                 />
