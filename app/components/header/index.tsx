@@ -2,11 +2,11 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import ShoeWrapper from "../shoe/index";
-import HeaderText from "../motion/header/headerText";
 import SideText from "../motion/header/SideText";
 import HeaderStar from "../../assets/icons/HeaderStar.svg";
 import ArrowBottom from "../../assets/icons/Arrow-Bottom.svg";
 import HeaderNavbar from "../navbar/HeaderNavbar";
+import HeaderText from "../motion/header/HeaderText";
 
 const Header = () => {
   return (
