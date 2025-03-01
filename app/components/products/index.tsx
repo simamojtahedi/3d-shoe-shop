@@ -4,12 +4,13 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProductCard from "./productCard/index";
 import Arrow from "../../assets/icons/Arrow-Bottom.svg";
+import { ProductCardProps } from "../interfaces";
 
 interface ProductsProps {
   title: string;
   title_brand: string;
   en_title: string;
-  productsList: any;
+  productsList: ProductCardProps[];
 }
 
 const Products: React.FC<ProductsProps> = ({
@@ -55,7 +56,7 @@ const Products: React.FC<ProductsProps> = ({
           },
         }}
       >
-        {productsList.map((product: any, idx: number) => (
+        {productsList.map((product: ProductCardProps, idx: number) => (
           <SwiperSlide key={idx}>
             <ProductCard product={product} />
           </SwiperSlide>

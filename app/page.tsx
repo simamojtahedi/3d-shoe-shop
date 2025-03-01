@@ -1,10 +1,10 @@
 import Categories from "./components/categories/index";
 import Header from "./components/header/index";
+import { ProductCardProps } from "./components/interfaces";
 import Products from "./components/products/index";
 import Quote from "./components/quote/index";
 import Services from "./components/services/index";
 import { products } from "./data/index";
-
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
         title_brand="نایـــــکی"
         en_title="nike"
         productsList={products.filter(
-          (product: any) => product.brand == "Nike"
+          (product: ProductCardProps) => product.brand == "Nike"
         )}
       />
       <Products
@@ -24,7 +24,7 @@ export default function Home() {
         title_brand="آدیـــــداس"
         en_title="adidas"
         productsList={products.filter(
-          (product: any) => product.brand == "Adidas"
+          (product: ProductCardProps) => product.brand == "Adidas"
         )}
       />
       <Quote />
@@ -33,7 +33,7 @@ export default function Home() {
         title_brand="زارا"
         en_title="zara"
         productsList={products.filter(
-          (product: any) => product.brand == "Zara"
+          (product: ProductCardProps) => product.brand == "Zara"
         )}
       />
       <Services />

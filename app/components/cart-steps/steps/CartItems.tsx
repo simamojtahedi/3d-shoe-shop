@@ -1,19 +1,24 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+
+interface Item {
+  id: string | number;
+  count: number | string;
+}
 
 const CartItems = ({
   cart_items,
   getProductData,
   setStep,
 }: {
-  cart_items: any;
+  cart_items: Item[];
   getProductData: any;
   setStep: any;
 }) => {
   return (
     <div className="flex flex-col xl:flex-row items-start justify-between">
       <div className="flex-1">
-        {cart_items.map((item: any) => (
+        {cart_items.map((item: Item) => (
           <div className="p-3 border-2 rounded-2xl mt-4 flex flex-col xl:flex-row items-start justify-between">
             <div className="flex-1">
               <div className="flex flex-col xl:flex-row items-start">

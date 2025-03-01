@@ -71,7 +71,7 @@ const ProductFilters = () => {
                 value={price}
                 className="range range-sm"
                 step="1"
-                onChange={(value) => priceRangeSlide(value)}
+                onChange={priceRangeSlide}
               />
               <div className="w-full flex justify-between text-xs px-2">
                 <span>{lowestPrice.toLocaleString()}</span>

@@ -3,13 +3,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { StarRating } from "@/components/stars";
 import { brandConvertor } from "@/utils/functions";
+import { ProductCardProps } from "@/components/interfaces";
 import ArrowBottom from "../../../assets/icons/Arrow-Bottom-light.svg";
 
-interface ProductCardProps {
-  product: any;
-}
-
-const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
+const ProductCard = ({ product }: { product: ProductCardProps }) => {
   return (
     <div className="overflow-hidden rounded-3xl bg-base-100 border-solid border-[var(--color-primary)] border-2">
       <Link href={`/product/${product.id}`}>

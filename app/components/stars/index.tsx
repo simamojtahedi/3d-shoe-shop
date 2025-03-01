@@ -1,4 +1,4 @@
-export const StarRating = (rating: any) => {
+export const StarRating = (rating: string | number) => {
   return (
     <div className="rating rating-xs">
       {[...Array(rating)].map((_, index) => (

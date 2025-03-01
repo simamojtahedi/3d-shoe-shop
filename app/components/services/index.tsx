@@ -6,6 +6,7 @@ import Award from "../../assets/icons/Award.svg";
 import GPS from "../../assets/icons/GPS.svg";
 import Calling from "../../assets/icons/Calling.svg";
 import Star from "../../assets/icons/Star.svg";
+import { Service } from "../interfaces";
 
 const Services = () => {
   const services_items = [
@@ -43,7 +44,7 @@ const Services = () => {
 
   return (
     <div className="py-10 xl:px-20 overflow-hidden box-border flex xl:justify-between justify-center items-center flex-col xl:flex-row">
-      {services_items.map((item: any, idx: number) => (
+      {services_items.map((item: Service, idx: number) => (
         <motion.div
           key={item.title}
           initial={{ opacity: 0 }}

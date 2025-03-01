@@ -1,3 +1,5 @@
+import { ProductCardProps } from "@/components/interfaces";
+
 interface OBJType {
   color_hex: string;
 }
@@ -35,7 +37,7 @@ export const sortingNameConvertor = (sort: string) => {
 };
 
 // Get colors of shoes
-export const getUniqueHexColors = (products: any) => {
+export const getUniqueHexColors = (products: ProductCardProps[]) => {
   let hexColors: any = [];
   products.forEach((obj: OBJType) => {
     if (obj.color_hex) {
@@ -49,10 +51,12 @@ export const getUniqueHexColors = (products: any) => {
 };
 
 // Get highest and lowest prices
-export const getHighestAndLowestPrice = (products: any) => {
+export const getHighestAndLowestPrice = (products: ProductCardProps[]) => {
   let prices = products.map((product: ProductType) => product.price);
 
+  //@ts-ignore
   let highestPrice = Math.max(...prices);
+  //@ts-ignore
   let lowestPrice = Math.min(...prices);
 
   return { highestPrice, lowestPrice };

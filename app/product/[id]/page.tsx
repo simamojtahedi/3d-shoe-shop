@@ -1,4 +1,3 @@
-//@ts-nocheck
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
@@ -53,8 +52,8 @@ const Page = ({ params }: { params: { id: string } }) => {
 
         <div className="flex flex-col xl:flex-row items-center xl:items-start justify-between">
           <Image
-            alt={product?.name}
-            src={product?.image}
+            alt={product?.name ?? ""}
+            src={product?.image ?? ""}
             className="w-full xl:w-1/3 bg-base-200 rounded-3xl shadow-lg object-top"
           />
           <div className="w-full xl:w-2/3 xl:pr-10">
@@ -118,8 +117,8 @@ const Page = ({ params }: { params: { id: string } }) => {
               </h3>
               <h2 className="text-xl lg:text-2xl">
                 {(
-                  product?.price -
-                  product?.price * (product?.off_percent / 100)
+                  (product?.price ?? 0) -
+                  (product?.price ?? 0) * ((product?.off_percent ?? 0) / 100)
                 ).toLocaleString()}{" "}
                 تومان
               </h2>
