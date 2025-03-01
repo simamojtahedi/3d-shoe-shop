@@ -1,35 +1,94 @@
 
-## Getting Started
+# KAFSHET – Customizable Shoe Shop
 
-First, run the development server:
+![Image](https://github.com/user-attachments/assets/277cdb7d-3e27-4778-b9e4-48fa2608286f)
+
+**KAFSHET** is a modern, responsive e-commerce platform built for shoe enthusiasts. This project offers a seamless shopping experience where users can browse a wide range of footwear from top brands (like Nike, Adidas, and Zara), **design their own custom shoes in 3D**, and enjoy a secure checkout process—all with a clean and intuitive interface.
+
+
+## Demo
+
+Experience the live application here: [**Live Demo**](https://3d-shoe-shop.vercel.app/)
+
+
+## Features
+
+The crown jewel of **KAFSHET** is the 3D Custom Shoe Designer feature. This tool is designed to give users full creative control over their footwear designs with an immersive, interactive experience. Below are some of its standout attributes:
+
+**Interactive 3D Modeling**
+
+- **Real-Time 3D Visualization:** Powered by WebGL and modern 3D libraries, the designer renders high-quality models that users can interact with directly in their browsers.
+
+- **360° Rotation and Zoom:** Easily rotate, pan, and zoom in on the shoe model to inspect every detail from any angle.
+
+- **Dynamic Editing:** Users can change colors, textures, materials, and even adjust design elements on different parts of the shoe in real time.
+
+**Customization Features**
+
+- **User-Friendly Interface:** Designed with the end-user in mind, the tool offers intuitive controls, drag-and-drop functionality, and a clean layout that simplifies the customization process.
+
+- **Preview and Save:** Once satisfied with their custom design, users can preview the final product in 3D before buying it. This ensures that the design meets their expectations prior to purchase.
+
+**Technical Highlights**
+
+- **WebGL & 3D Libraries:** The feature utilizes cutting-edge technologies such as WebGL, potentially in conjunction with Three.js, to deliver smooth and responsive 3D rendering.
+
+- **Performance Optimizations:** Special attention is given to ensure the 3D interactions are fluid, even on devices with limited processing power.
+
+- **Future Extensions:** Plans include advanced functionalities such as exporting designs for production, integrating augmented reality (AR) previews, and more.
+
+
+## Tech Stack
+
+- Next.js
+- Redux
+- Tailwind
+- WebGL
+- Three.js
+- Daisyui
+- Framer-motion
+- Swiper
+
+![Image](https://github.com/user-attachments/assets/52d8344d-b2d0-4696-b0f4-5d1ae61c656d)
+
+
+## Installation
+
+To run the project locally, follow these steps:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/simamojtahedi/shoe-shop
+  cd shoe-shop
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install Dependencies:
+```bash
+  npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Run the Development Server:
+```bash
+  npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Visit http://localhost:3000 to view the application.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    
+## Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+If you have any questions or need further assistance, feel free to reach out at [siramojtahedi@gmail.com].
 
-## Deploy on Vercel
+![Image](https://github.com/user-attachments/assets/f3c90cfc-087d-4bd0-9225-46025cf9ba53)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+
+
+## Authors
+
+- [@simamojtahedi](https://github.com/simamojtahedi)
+
